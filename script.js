@@ -6,7 +6,7 @@ const locationOfIp= document.getElementById('location')
 const timeZone= document.getElementById('timezone')
 const isp= document.getElementById('isp')
 
-// // manual ip address search function
+ // manual ip address search function
   function ipLocationBySearch(e){
   try{
     e.preventDefault();
