@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IP address tracker</title>
+    <!--leaflet map css link-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
+     integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14="
+     crossorigin=""/>
+     <!--leaflet map javascript css link-->
+     <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
+     integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg="
+     crossorigin=""></script>
+    <!--main stylesheet link-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <!--main heading text-->
+        <h1 class="title-text">
+            IP address tracker
+        </h1>
+        <!--search input-->
+        <form  id="form" class="input-group">
+            <input type="text" id="search" class="search-box" placeholder="search for any IP address" required>
+            <button  id="btn" class="search-btn"><i class="fa-solid fa-2x fa-magnifying-glass-location"></i></button>
+        </form>
+        <!--ip address information component-->
+        <div class="info-container">
+            <div class="info">
+                <h3 class="heading-text">IP ADDRESS</h3>
+                <h2 id="ip"class="text" >129.234.82.39</h2>
+            </div>
+            <hr>
+            <div class="info">
+                <h3 class="heading-text">LOCATION</h3>
+                <h2 id="location" class="text">United State</h2>
+            </div>
+            <hr>
+            <div class="info">
+                <h3 class="heading-text">TIMEZONE</h3>
+                <h2 id="timezone" class="text">UTC-5.30</h2>
+            </div>
+            <hr>
+            <div class="info">
+                <h3 class="heading-text">ISP</h3>
+                <h3 id="isp" class="text">spaceX</h3>
+            </div>
+        </div>
+    </header>
+    <!-- loader-->
+    <div class="loader hide">
+        <div class="spin">
+        </div>
+        <div class="spin">
+        </div>
+        <div class="spin">
+        </div>
+        <div class="spin">
+        </div>
+        <!-- <h1 class="spin-text">Loading..</h1> -->
+    </div>
+      <!--map container-->
+      <div id="map">
+
+    </div>
+   <!-- javascript script link  -->
+   <script  src="script.js" ></script>
+   <!--fontawesome icon script link-->
+   <script src="https://kit.fontawesome.com/3b4cff32f5.js" crossorigin="anonymous"></script>
+</body>
+</html>
